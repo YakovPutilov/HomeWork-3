@@ -34,16 +34,10 @@ void ShowArray(int [] array)
     }
     Console.WriteLine();
 }
-
 Console.WriteLine("Enter number");
 int number = Convert.ToInt32(Console.ReadLine());
-
 int leng = CountLength(number);
-
 //Console.WriteLine(leng);
 //Console.WriteLine(number);
-
-int [] resarray = CreateArray(number, leng);
-
-ShowArray(resarray);
-
+//int [] resarray = CreateArray(number, leng);
+ShowArray(CreateArray(number, leng));
